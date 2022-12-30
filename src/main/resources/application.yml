@@ -1,10 +1,25 @@
-spring.mail:
-  host: smtp.gmail.com
-  port: 587
-  username: <username>
-  password: <Login password to SMTP server>
-  properties.mail.smtp.auth: true
-  properties.mail.smtp.starttls.enable: true
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/
+    username: postgres
+    password: flowable
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: <username>
+    password: <Login password to SMTP server>
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+
+
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  show_sql: true
+  hbm2ddl.auto: update
 
 server:
   servlet:

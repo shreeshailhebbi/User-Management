@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<commons-text.version>1.4</commons-text.version>
+		<postgre-sql-version>42.5.0</postgre-sql-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -56,6 +57,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgre-sql-version}</version>
 		</dependency>
 	</dependencies>
 
