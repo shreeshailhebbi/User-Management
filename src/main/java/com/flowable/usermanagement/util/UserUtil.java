@@ -25,7 +25,7 @@ public class UserUtil {
         stringBuilder.append("/n");
         stringBuilder.append("Temporary password : " + user.getPassword());
         stringBuilder.append("/n");
-        stringBuilder.append("<a href='http://localhost:8080/user-management/unlock-account'>Link to unlock account</a>");
+        stringBuilder.append("<a href='http://localhost:8080/user-management/auth/unlock-account'>Link to unlock account</a>");
         stringBuilder.append("/n");
         stringBuilder.append("Thanks,");
         stringBuilder.append("/n");
@@ -43,7 +43,7 @@ public class UserUtil {
         stringBuilder.append("/n");
         stringBuilder.append("Password : " + user.getPassword());
         stringBuilder.append("/n");
-        stringBuilder.append("<a href='http://localhost:8080/user-management/login'>Link to unlock account</a>");
+        stringBuilder.append("<a href='http://localhost:8080/user-management/auth/login'>Link to unlock account</a>");
         stringBuilder.append("/n");
         stringBuilder.append("Thanks,");
         stringBuilder.append("/n");

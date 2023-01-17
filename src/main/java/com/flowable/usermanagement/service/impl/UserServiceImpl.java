@@ -94,7 +94,6 @@ public class UserServiceImpl implements UserService {
     private void sendEmail(String mailId, String subject, String body) {
         try {
             SimpleMailMessage mailMessage = new SimpleMailMessage();
-
             mailMessage.setFrom(sender);
             mailMessage.setTo(mailId);
             mailMessage.setText(body);

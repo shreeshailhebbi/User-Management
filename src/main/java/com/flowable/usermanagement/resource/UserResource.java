@@ -5,10 +5,10 @@ import com.flowable.usermanagement.model.LoginForm;
 import com.flowable.usermanagement.model.UnlockAccForm;
 import com.flowable.usermanagement.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/auth")
 public class UserResource {
 
     @Autowired
